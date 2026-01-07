@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +8,7 @@ body {
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 main {
@@ -23,6 +26,7 @@ main {
         position: absolute;
         top: 187px;
         left: 167px;
+        box-shadow: 0px 39px 60px 0px rgba(0, 0, 0, 0.14);
       }
       img.gray {
         top: 469px;
@@ -35,9 +39,10 @@ main {
   form {
     display: flex;
     justify-content: flex-end;
-    /* align-items: center; */
     width: 100%;
     height: 352px;
+    margin-top: 275px;
+    margin-right: 220px;
   }
 
   div.Cardholder_Name,
@@ -49,9 +54,69 @@ main {
 
   div.dates_inputs {
     display: flex;
+    gap: 10px;
+  }
+
+  div.date input {
+    width: 80px;
+  }
+
+  div.CVC input {
+    width: 191px;
   }
 
   div.date_cvc {
     display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  div.Cardholder_Name input,
+  .card_number input {
+    width: 381px;
+  }
+
+  label {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: rgba(33, 9, 47, 1);
+    line-height: 100%;
+    margin-bottom: 9px;
+    display: block;
+  }
+
+  div.Cardholder_Name input,
+  .card_number input,
+  div.CVC input,
+  div.date input {
+    height: 45px;
+    border: 1px solid rgba(223, 222, 224, 1);
+    border-radius: 8px;
+    margin-bottom: 26px;
+    padding: 16px 11px;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(199, 193, 203);
+  }
+
+  input::placeholder {
+    font-size: 16px;
+    color: rgb(199, 193, 203);
+    font-weight: 400;
+  }
+
+  button {
+    width: 381px;
+    height: 53px;
+    background-color: rgba(33, 9, 47, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    line-height: 100%;
+    margin-top: 15px;
   }
 }
