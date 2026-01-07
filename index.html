@@ -11,32 +11,36 @@
       <div class="container">
         <div class="imgs">
           <div class="background">
-            <img src="./purple.png" alt="" />
+            <img src="./images/purple.png" alt="" />
             <div class="cards">
-              <img class="purple" src="./purple_card.png" alt="" />
-              <img class="gray" src="./gray_card.png" alt="" />
+              <img class="purple" src="./images/purple_card.png" alt="" />
+              <img class="gray" src="./images/gray_card.png" alt="" />
             </div>
           </div>
         </div>
         <form>
           <div class="log_in">
-            <div class="Cardholder Name">
+            <div class="Cardholder_Name">
               <label for="Cardholder Name">Cardholder Name</label>
               <input type="text" id="Cardholder Name" placeholder="#" />
             </div>
-            <div class="last_name">
+            <div class="card_number">
               <label for="tel">Card Number</label>
               <input type="tel" id="card_number" placeholder="#" />
             </div>
 
-            <div class="date">
-              <label for="date">Exp. Date (MM/YY)</label>
-              <input type="text" id="exp_month" placeholder="#" />
-              <input type="text" id="exp_year" placeholder="#" />
-            </div>
-            <div class="CVC">
-              <label for="tel">CVC</label>
-              <input type="tel" id="tel" placeholder="#" />
+            <div class="date_cvc">
+              <div class="date">
+                <label for="date">Exp. Date (MM/YY)</label>
+                <div class="dates_inputs">
+                  <input type="text" id="exp_month" placeholder="#" />
+                  <input type="text" id="exp_year" placeholder="#" />
+                </div>
+              </div>
+              <div class="CVC">
+                <label for="tel">CVC</label>
+                <input type="tel" id="tel" placeholder="#" />
+              </div>
             </div>
             <div class="button">
               <button type="submit">Confirm</button>

@@ -35,6 +35,23 @@ main {
   form {
     display: flex;
     justify-content: flex-end;
+    /* align-items: center; */
     width: 100%;
+    height: 352px;
+  }
+
+  div.Cardholder_Name,
+  .card_number,
+  .CVC {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.dates_inputs {
+    display: flex;
+  }
+
+  div.date_cvc {
+    display: flex;
   }
 }
