@@ -7,3 +7,34 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
+
+main {
+  /* min-height: 100vh; */
+
+  div.container {
+    display: flex;
+  }
+
+  div.background {
+    position: relative;
+
+    div.cards {
+      img.purple {
+        position: absolute;
+        top: 187px;
+        left: 167px;
+      }
+      img.gray {
+        top: 469px;
+        left: 258px;
+        position: absolute;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
